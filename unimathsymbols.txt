@@ -718,7 +718,7 @@
 022EC^⋬^\ntrianglelefteq^\ntrianglelefteq^R^mathrel^amssymb^= \nunlhd (wrisym), not left triangle, equals
 022ED^⋭^\ntrianglerighteq^\ntrianglerighteq^R^mathrel^amssymb^= \nunrhd (wrisym), not right triangle, equals
 022EE^⋮^\vdots^\vdots^R^mathrel^^VERTICAL ELLIPSIS
-022EF^⋯^\cdots^\unicodecdots^R^mathord^^three dots, centered
+022EF^⋯^\cdots^\unicodecdots^R^mathord^^= \ctdot, three dots, centered
 022F0^⋰^\iddots^\adots^R^mathrel^mathdots^= \adots (yhmath), three dots, ascending
 022F1^⋱^\ddots^\ddots^R^mathrel^^three dots, descending
 022F2^⋲^^\disin^R^mathrel^^ELEMENT OF WITH LONG HORIZONTAL STROKE
