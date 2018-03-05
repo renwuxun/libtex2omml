@@ -509,7 +509,7 @@
 0221B^∛^\sqrt[3]^\cuberoot^L^mathradical^^CUBE ROOT
 0221C^∜^\sqrt[4]^\fourthroot^L^mathradical^^FOURTH ROOT
 0221D^∝^\propto^\propto^R^mathrel^^# \varpropto (amssymb), is PROPORTIONAL TO
-0221E^∞^\infty^\infty^N^mathord^^INFINITY
+0221E^∞^\infty^\infty^N^mathord^^= \infin, INFINITY
 0221F^∟^\rightangle^\rightangle^N^mathord^wrisym^right (90 degree) angle
 02220^∠^\angle^\angle^N^mathord^^ANGLE
 02221^∡^\measuredangle^\measuredangle^N^mathord^amssymb wrisym^MEASURED ANGLE
