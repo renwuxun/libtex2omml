@@ -9,11 +9,50 @@
 #include "defs.h"
 
 
+int is_xml_specialchars(const char* base, size_t len) { // '&lt;', '&gt;', '&amp;', '&quot;', '&apos;'
+    switch (len) {
+        case 2:
+            if (0 == memcmp(base, "lt", 2) || 0 == memcmp(base, "gt", 2)) {
+                return 1;
+            }
+            break;
+        case 3:
+            if (0 == memcmp(base, "amp", 3)) {
+                return 1;
+            }
+            break;
+        case 4:
+            if (0 == memcmp(base, "quot", 4) || 0 == memcmp(base, "apos", 4)) {
+                return 1;
+            }
+            break;
+        default:;
+    }
+    return 0;
+}
+
 void replace_by_unicode_found_cb(const char* base, size_t len, void* onfound_data) {
     log_debug("replace_by_unicode_found_cb");
 
     struct onfound_data_s* arg = (struct onfound_data_s*)onfound_data;
     size_t last_scan_len = base - arg->laststart;
+
+    if (base[0] == '#' || is_xml_specialchars(base, len)) { // is unicode like &#x1bcd or &#123456;
+        arg->xmlbuflen += last_scan_len + len;
+        if (arg->xmlbuflen > arg->xmlbufsize) {
+            log_warning("replace_by_unicode_found_cb: need more xmlbuf [xmlbuflen:%d, xmlbufsize:%d]", (int)arg->xmlbuflen, (int)arg->xmlbufsize);
+            arg->xmlbuflen -= last_scan_len + len;
+            return;
+        }
+
+        memcpy(arg->xmlbuf, arg->laststart, last_scan_len);
+        arg->xmlbuf += last_scan_len;
+        memcpy(arg->xmlbuf, base, len);
+        arg->xmlbuf += len;
+
+        arg->laststart = (char*)(base+len);
+        return;
+    }
 
     char w[len+2]; // !!!
     memset(w, 0, len+2); // !!!

@@ -28,7 +28,8 @@ int tex2omml_init(const char* mathsymbol_file, const char* mml2omml_xsl_file);
 
 void tex2omml_free(void);
 
-int tex2omml_translate(const char* tex, size_t texlen, char* ommlbuf, size_t ommlbufsize);
+int tex2omml_translate_texopt(const char* tex, size_t texlen, char* ommlbuf, size_t ommlbufsize, int texopt);
+int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt);
 
 
 

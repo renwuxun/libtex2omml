@@ -109,7 +109,7 @@
 000B4^´^^^N^mathord^^acute, alias for 0301
 000B5^µ^\Micro^^N^mathalpha^wrisym^= \tcmu (mathcomp), t \textmu (textcomp), # \mathrm{\mu} (omlmathrm), # \muup (kpfonts mathdesign), MICRO SIGN
 000B6^¶^^^N^mathord^^para (paragraph sign, pilcrow)
-000B7^·^^\cdotp^B^mathbin^^# \cdot, x \centerdot, b: MIDDLE DOT
+000B7^·^^\cdotp^B^mathbin^^= \middot, # \cdot, x \centerdot, b: MIDDLE DOT
 000B9^¹^^^N^mathord^^sup1
 000BC^¼^^^N^mathord^^frac14
 000BD^½^^^N^mathord^^frac12
@@ -367,9 +367,9 @@
 02149^ⅉ^\ComplexJ^\mitBbbj^N^mathord^wrisym^= \jj (wrisym), DOUBLE-STRUCK ITALIC SMALL J
 0214A^⅊^^\PropertyLine^^mathord^^PROPERTY LINE
 0214B^⅋^\invamp^\upand^N^mathbin^txfonts^# \bindnasrepma (stmaryrd), TURNED AMPERSAND
-02190^←^\leftarrow^\leftarrow^R^mathrel^^= \gets, a: leftward arrow
+02190^←^\leftarrow^\leftarrow^R^mathrel^^= \gets, = \larr, a: leftward arrow
 02191^↑^\uparrow^\uparrow^R^mathrel^^upward arrow
-02192^→^\rightarrow^\rightarrow^R^mathrel^^= \to, = \tfun (oz), = \fun (oz), rightward arrow, z notation total function
+02192^→^\rightarrow^\rightarrow^R^mathrel^^= \to, = \tfun (oz), = \fun (oz), = \rarr, rightward arrow, z notation total function
 02193^↓^\downarrow^\downarrow^R^mathrel^^downward arrow
 02194^↔^\leftrightarrow^\leftrightarrow^R^mathrel^-wrisym^= \rel (oz), LEFT RIGHT ARROW, z notation relation
 02195^↕^\updownarrow^\updownarrow^R^mathrel^^up and down arrow
@@ -496,20 +496,20 @@
 0220E^∎^^\QED^N^mathord^^# \blacksquare (amssymb), END OF PROOF
 0220F^∏^\prod^\prod^L^mathop^^product operator
 02210^∐^\coprod^\coprod^L^mathop^^coproduct operator
-02211^∑^\sum^\sum^L^mathop^^summation operator
+02211^∑^\sum^\sum^L^mathop^^= \Sum, summation operator
 02212^−^-^\minus^V^mathbin^^MINUS SIGN
 02213^∓^\mp^\mp^V^mathbin^^MINUS-OR-PLUS SIGN
 02214^∔^\dotplus^\dotplus^B^mathbin^amssymb^plus sign, dot above
 02215^∕^\slash^\divslash^B^mathbin^^DIVISION SLASH
 02216^∖^\smallsetminus^\smallsetminus^B^mathbin^amssymb fourier^small SET MINUS (cf. reverse solidus)
 02217^∗^\ast^\ast^B^mathbin^^ASTERISK OPERATOR (Hodge star operator)
-02218^∘^\circ^\vysmwhtcircle^B^mathbin^^composite function (small circle)
+02218^∘^\circ^\vysmwhtcircle^B^mathbin^^= \SmallCircle, composite function (small circle)
 02219^∙^\bullet^\vysmblkcircle^B^mathbin^^BULLET OPERATOR
 0221A^√^\sqrt^\sqrt^L^mathradical^^radical
 0221B^∛^\sqrt[3]^\cuberoot^L^mathradical^^CUBE ROOT
 0221C^∜^\sqrt[4]^\fourthroot^L^mathradical^^FOURTH ROOT
 0221D^∝^\propto^\propto^R^mathrel^^# \varpropto (amssymb), is PROPORTIONAL TO
-0221E^∞^\infty^\infty^N^mathord^^INFINITY
+0221E^∞^\infty^\infty^N^mathord^^= \infin, INFINITY
 0221F^∟^\rightangle^\rightangle^N^mathord^wrisym^right (90 degree) angle
 02220^∠^\angle^\angle^N^mathord^^ANGLE
 02221^∡^\measuredangle^\measuredangle^N^mathord^amssymb wrisym^MEASURED ANGLE
@@ -676,7 +676,7 @@
 022C2^⋂^\bigcap^\bigcap^L^mathop^^= \dint (oz), \dinter (oz), intersection operator
 022C3^⋃^\bigcup^\bigcup^L^mathop^^= \duni (oz), \dunion (oz), union operator
 022C4^⋄^\diamond^\smwhtdiamond^B^mathbin^^DIAMOND OPERATOR (white diamond)
-022C5^⋅^\cdot^\cdot^B^mathbin^^DOT OPERATOR (small middle dot)
+022C5^⋅^\cdot^\cdot^B^mathbin^^= \sdot, DOT OPERATOR (small middle dot)
 022C6^⋆^\star^\star^B^mathbin^^small star, filled, low
 022C7^⋇^\divideontimes^\divideontimes^B^mathbin^amssymb^division on times
 022C8^⋈^\bowtie^\bowtie^R^mathrel^^= \lrtimes (txfonts), BOWTIE
@@ -718,7 +718,7 @@
 022EC^⋬^\ntrianglelefteq^\ntrianglelefteq^R^mathrel^amssymb^= \nunlhd (wrisym), not left triangle, equals
 022ED^⋭^\ntrianglerighteq^\ntrianglerighteq^R^mathrel^amssymb^= \nunrhd (wrisym), not right triangle, equals
 022EE^⋮^\vdots^\vdots^R^mathrel^^VERTICAL ELLIPSIS
-022EF^⋯^\cdots^\unicodecdots^R^mathord^^three dots, centered
+022EF^⋯^\cdots^\unicodecdots^R^mathord^^= \ctdot, three dots, centered
 022F0^⋰^\iddots^\adots^R^mathrel^mathdots^= \adots (yhmath), three dots, ascending
 022F1^⋱^\ddots^\ddots^R^mathrel^^three dots, descending
 022F2^⋲^^\disin^R^mathrel^^ELEMENT OF WITH LONG HORIZONTAL STROKE

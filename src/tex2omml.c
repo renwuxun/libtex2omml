@@ -46,8 +46,8 @@ void tex2omml_free(void) {
     }
 }
 
-int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize) {
-    char* html = mtex2MML_parse(tex, texlen, 0);
+int tex2omml_translate_texopt(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt) {
+    char* html = mtex2MML_parse(tex, texlen, texopt);
     if (!html) {
         log_error("translate tex to html error");
         return 1;
@@ -97,4 +97,8 @@ int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize
     xmlFreeDoc(res);
 
     return 0;
+}
+
+int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt) {
+    return tex2omml_translate_texopt(tex, texlen, buf, bufsize, 0);
 }
