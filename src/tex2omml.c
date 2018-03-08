@@ -99,6 +99,6 @@ int tex2omml_translate_texopt(const char* tex, size_t texlen, char* buf, size_t 
     return 0;
 }
 
-int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt) {
+int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize) {
     return tex2omml_translate_texopt(tex, texlen, buf, bufsize, 0);
 }
