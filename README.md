@@ -4,7 +4,7 @@ TEX/LATEX转换为Microsoft Office mathml格式的库
 ### 依赖
 * xslt
 * xml2
-* [mtex2MML](https://github.com/gjtorikian/mtex2MML "mtex2MML") (v1.3.1)
+* [mtex2MML](https://github.com/renwuxun/mtex2MML "mtex2MML")
 
 ### 安装
 ```shell
