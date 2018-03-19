@@ -1,4 +1,4 @@
-00021^!^!^\exclam^N^mathpunct^^EXCLAMATION MARK
+00021^!^!^\exclam^N^mathpunct^^= \exclamation, EXCLAMATION MARK
 00023^#^\#^\octothorpe^N^mathord^-oz^# \# (oz), NUMBER SIGN
 00024^$^\$^\mathdollar^N^mathord^^= \mathdollar, DOLLAR SIGN
 00025^%^\%^\percent^N^mathord^^PERCENT SIGN
@@ -6,7 +6,7 @@
 00028^(^(^\lparen^O^mathopen^^LEFT PARENTHESIS
 00029^)^)^\rparen^C^mathclose^^RIGHT PARENTHESIS
 0002A^*^*^^N^mathord^^# \ast, (high) ASTERISK, star
-0002B^+^+^\plus^V^mathbin^^PLUS SIGN
+0002B^+^+^\plus^V^mathbin^^= \add, PLUS SIGN
 0002C^,^,^\comma^P^mathpunct^^COMMA
 0002D^-^^^N^mathbin^^t -, HYPHEN-MINUS (deprecated for math)
 0002E^.^.^\period^P^mathalpha^^FULL STOP, period
@@ -23,9 +23,9 @@
 00039^9^9^^N^mathord^^DIGIT NINE
 0003A^:^:^\mathcolon^P^mathpunct^-literal^= \colon (literal), COLON (not ratio)
 0003B^;^;^\semicolon^P^mathpunct^^SEMICOLON p:
-0003C^<^<^\less^R^mathrel^^LESS-THAN SIGN r:
+0003C^<^<^\less^R^mathrel^^= \lt, LESS-THAN SIGN r:
 0003D^=^=^\equal^R^mathrel^^EQUALS SIGN r:
-0003E^>^>^\greater^R^mathrel^^GREATER-THAN SIGN r:
+0003E^>^>^\greater^R^mathrel^^= \gt, GREATER-THAN SIGN r:
 0003F^?^?^\question^P^mathord^^QUESTION MARK
 00040^@^@^\atsign^N^mathord^^at
 00041^A^A^^A^mathalpha^-literal^= \mathrm{A}, LATIN CAPITAL LETTER A
@@ -90,31 +90,32 @@
 0007C^|^|^\vert^F^mathfence^^= \vert, vertical bar
 0007D^}^\}^\rbrace^C^mathclose^^= \rbrace, RIGHT CURLY BRACKET
 0007E^~^\sptilde^^N^mathord^amsxtra^# \sim, TILDE
-000A0^ ^~^^S^^^nbsp
-000A1^¡^^^P^^^iexcl
+000A0^ ^~^^S^^^= \nbsp, nbsp
+000A1^¡^^^P^^^= \iexcl, iexcl
 000A2^¢^\cent^^N^mathord^wasysym^= \mathcent (txfonts), cent
-000A3^£^\pounds^\sterling^N^mathord^-fourier -omlmathit^= \mathsterling (txfonts), POUND SIGN, fourier prints a dollar sign
-000A4^¤^^^N^mathord^^t \currency (wasysym), curren
-000A5^¥^\yen^\yen^N^mathord^amsfonts^YEN SIGN
-000A6^¦^^^N^mathord^^brvbar (vertical)
-000A7^§^^^N^mathord^^sect
-000A8^¨^\spddot^^D^mathord^amsxtra^Dot /die, alias for 0308
+000A3^£^\pounds^\sterling^N^mathord^-fourier -omlmathit^= \pound, = \mathsterling (txfonts), POUND SIGN, fourier prints a dollar sign
+000A4^¤^^^N^mathord^^= \curren, t \currency (wasysym), curren
+000A5^¥^\yen^\yen^N^mathord^amsfonts^= \yen, YEN SIGN
+000A6^¦^^^N^mathord^^= \brvbar, brvbar (vertical)
+000A7^§^^^N^mathord^^= \sect, sect
+000A8^¨^\spddot^^D^mathord^amsxtra^= \uml, Dot /die, alias for 0308
 000AC^¬^\neg^\neg^U^mathord^^= \lnot, NOT SIGN
-000AE^®^\circledR^^X^mathord^amsfonts^REGISTERED SIGN
-000AF^¯^^^D^mathord^^macr, alias for 0304
-000B0^°^^^N^mathord^^deg
-000B1^±^\pm^\pm^V^mathbin^^plus-or-minus sign
-000B2^²^^^N^mathord^^sup2
-000B3^³^^^N^mathord^^sup3
-000B4^´^^^N^mathord^^acute, alias for 0301
-000B5^µ^\Micro^^N^mathalpha^wrisym^= \tcmu (mathcomp), t \textmu (textcomp), # \mathrm{\mu} (omlmathrm), # \muup (kpfonts mathdesign), MICRO SIGN
-000B6^¶^^^N^mathord^^para (paragraph sign, pilcrow)
+000AE^®^\circledR^^X^mathord^amsfonts^= \reg, REGISTERED SIGN
+000AF^¯^^^D^mathord^^= \macr, macr, alias for 0304
+000B0^°^^^N^mathord^^= \deg, deg
+000B1^±^\pm^\pm^V^mathbin^^= \plusmn, plus-or-minus sign
+000B2^²^^^N^mathord^^= \sup2, sup2
+000B3^³^^^N^mathord^^= \sup3, sup3
+000B4^´^^^N^mathord^^= \acute, acute, alias for 0301
+000B5^µ^\Micro^^N^mathalpha^wrisym^= \micro, = \tcmu (mathcomp), t \textmu (textcomp), # \mathrm{\mu} (omlmathrm), # \muup (kpfonts mathdesign), MICRO SIGN
+000B6^¶^^^N^mathord^^= \para, para (paragraph sign, pilcrow)
 000B7^·^^\cdotp^B^mathbin^^= \middot, # \cdot, x \centerdot, b: MIDDLE DOT
-000B9^¹^^^N^mathord^^sup1
-000BC^¼^^^N^mathord^^frac14
-000BD^½^^^N^mathord^^frac12
-000BE^¾^^^N^mathord^^frac34
-000BF^¿^^^P^^^iquest
+000B8^¸^\cedil^^^^^
+000B9^¹^^^N^mathord^^= \sup1, sup1
+000BC^¼^^^N^mathord^^= \frac14, frac14
+000BD^½^^^N^mathord^^= \frac12, frac12
+000BE^¾^^^N^mathord^^= \frac34, frac34
+000BF^¿^\iquest^^P^^^iquest
 000D7^×^\times^\times^B^mathbin^^MULTIPLICATION SIGN, z notation Cartesian product
 000F0^ð^\eth^\matheth^^mathalpha^amssymb arevmath^eth
 000F7^÷^\div^\div^B^mathbin^^divide sign
@@ -161,7 +162,7 @@
 00392^Β^^\upBeta^A^mathalpha^^capital beta, greek
 00393^Γ^\Gamma^\upGamma^A^mathalpha^-literal^= \Gamma (-slantedGreek), = \mathrm{\Gamma}, capital gamma, greek
 00394^Δ^\Delta^\upDelta^A^mathalpha^-literal^= \Delta (-slantedGreek), = \mathrm{\Delta}, capital delta, greek
-00395^Ε^^\upEpsilon^A^mathalpha^^capital epsilon, greek
+00395^Ε^^\upEpsilon^A^mathalpha^^= \epsi, capital epsilon, greek
 00396^Ζ^^\upZeta^A^mathalpha^^capital zeta, greek
 00397^Η^^\upEta^A^mathalpha^^capital eta, greek
 00398^Θ^\Theta^\upTheta^A^mathalpha^-literal^= \Theta (-slantedGreek), = \mathrm{\Theta}, capital theta, greek
@@ -239,19 +240,19 @@
 0200A^ ^^^S^^^HAIR SPACE
 0200B^​^^^S^^^# \hspace{0pt}, zwsp
 02010^‐^^^P^mathord^^HYPHEN (true graphic)
-02012^‒^^^P^mathord^^dash
-02013^–^^^P^mathord^^ndash
-02014^—^^^P^mathord^^mdash
+02012^‒^\dash^^P^mathord^^dash
+02013^–^\ndash^^P^mathord^^ndash
+02014^—^\mdash^^P^mathord^^mdash
 02015^―^^\horizbar^^mathord^^HORIZONTAL BAR
 02016^‖^\|^\Vert^F^mathfence^^= \Vert, double vertical bar
 02017^‗^^\twolowline^^mathord^^DOUBLE LOW LINE (spacing)
 02020^†^\dagger^\dagger^N^mathbin^^DAGGER relation
 02021^‡^\ddagger^\ddagger^N^mathbin^^DOUBLE DAGGER relation
-02022^•^^\smblkcircle^B^mathbin^^# \bullet, b: round BULLET, filled
+02022^•^^\smblkcircle^B^mathbin^^= \bull, # \bullet, b: round BULLET, filled
 02025^‥^^\enleadertwodots^^mathord^^double baseline dot (en leader)
-02026^…^\ldots^\unicodeellipsis^N^mathord^^ellipsis (horizontal)
+02026^…^\ldots^\unicodeellipsis^N^mathord^^= \hellip, ellipsis (horizontal)
 02032^′^\prime^\prime^N^mathord^^PRIME or minute, not superscripted
-02033^″^\second^\dprime^N^mathord^mathabx^DOUBLE PRIME or second, not superscripted
+02033^″^\second^\dprime^N^mathord^mathabx^= \Prime, DOUBLE PRIME or second, not superscripted
 02034^‴^\third^\trprime^N^mathord^mathabx^TRIPLE PRIME (not superscripted)
 02035^‵^\backprime^\backprime^N^mathord^amssymb^reverse prime, not superscripted
 02036^‶^^\backdprime^N^mathord^^double reverse prime, not superscripted
@@ -482,7 +483,7 @@
 02200^∀^\forall^\forall^U^mathord^^FOR ALL
 02201^∁^\complement^\complement^U^mathord^amssymb fourier^COMPLEMENT sign
 02202^∂^\partial^\partial^N^mathord^-literal^= \partialup (kpfonts), PARTIAL DIFFERENTIAL
-02203^∃^\exists^\exists^U^mathord^^= \exi (oz), at least one exists
+02203^∃^\exists^\exists^U^mathord^^= \Exists, = \exi (oz), at least one exists
 02204^∄^\nexists^\nexists^U^mathord^amssymb fourier^= \nexi (oz), negated exists
 02205^∅^\varnothing^\varnothing^N^mathord^amssymb^circle, slash
 02206^∆^^\increment^U^mathord^^# \mathrm{\Delta}, laplacian (Delta; nabla square)
@@ -501,28 +502,28 @@
 02213^∓^\mp^\mp^V^mathbin^^MINUS-OR-PLUS SIGN
 02214^∔^\dotplus^\dotplus^B^mathbin^amssymb^plus sign, dot above
 02215^∕^\slash^\divslash^B^mathbin^^DIVISION SLASH
-02216^∖^\smallsetminus^\smallsetminus^B^mathbin^amssymb fourier^small SET MINUS (cf. reverse solidus)
+02216^∖^\smallsetminus^\smallsetminus^B^mathbin^amssymb fourier^= \bsol, small SET MINUS (cf. reverse solidus)
 02217^∗^\ast^\ast^B^mathbin^^ASTERISK OPERATOR (Hodge star operator)
 02218^∘^\circ^\vysmwhtcircle^B^mathbin^^= \SmallCircle, composite function (small circle)
 02219^∙^\bullet^\vysmblkcircle^B^mathbin^^BULLET OPERATOR
-0221A^√^\sqrt^\sqrt^L^mathradical^^radical
+0221A^√^\sqrt^\sqrt^L^mathradical^^= \radic, radical
 0221B^∛^\sqrt[3]^\cuberoot^L^mathradical^^CUBE ROOT
 0221C^∜^\sqrt[4]^\fourthroot^L^mathradical^^FOURTH ROOT
-0221D^∝^\propto^\propto^R^mathrel^^# \varpropto (amssymb), is PROPORTIONAL TO
+0221D^∝^\propto^\propto^R^mathrel^^= \prop, # \varpropto (amssymb), is PROPORTIONAL TO
 0221E^∞^\infty^\infty^N^mathord^^= \infin, INFINITY
 0221F^∟^\rightangle^\rightangle^N^mathord^wrisym^right (90 degree) angle
 02220^∠^\angle^\angle^N^mathord^^ANGLE
 02221^∡^\measuredangle^\measuredangle^N^mathord^amssymb wrisym^MEASURED ANGLE
 02222^∢^\sphericalangle^\sphericalangle^N^mathord^amssymb wrisym^SPHERICAL ANGLE
-02223^∣^\mid^\mid^R^mathrel^^r: DIVIDES
+02223^∣^\mid^\mid^R^mathrel^^= \VerticalBar, r: DIVIDES
 02224^∤^\nmid^\nmid^R^mathrel^amssymb^negated mid, DOES NOT DIVIDE
 02225^∥^\parallel^\parallel^R^mathrel^^parallel
 02226^∦^\nparallel^\nparallel^R^mathrel^amssymb fourier^not parallel
 02227^∧^\wedge^\wedge^B^mathbin^amssymb^= \land, b: LOGICAL AND
 02228^∨^\vee^\vee^B^mathbin^^= \lor, b: LOGICAL OR
-02229^∩^\cap^\cap^B^mathbin^^INTERSECTION
-0222A^∪^\cup^\cup^B^mathbin^^UNION or logical sum
-0222B^∫^\int^\int^L^mathop^^INTEGRAL operator
+02229^∩^\cap^\cap^B^mathbin^^= \Intersection, INTERSECTION
+0222A^∪^\cup^\cup^B^mathbin^^= \Union, UNION or logical sum
+0222B^∫^\int^\int^L^mathop^^= \Integral, INTEGRAL operator
 0222C^∬^\iint^\iint^L^mathop^amsmath fourier esint wasysym^DOUBLE INTEGRAL operator
 0222D^∭^\iiint^\iiint^L^mathop^amsmath fourier esint wasysym^TRIPLE INTEGRAL operator
 0222E^∮^\oint^\oint^L^mathop^^CONTOUR INTEGRAL operator
@@ -609,14 +610,14 @@
 0227F^≿^\succsim^\succsim^R^mathrel^amssymb^= \SucceedsTilde (wrisym), succeeds, similar
 02280^⊀^\nprec^\nprec^R^mathrel^amssymb wrisym^not precedes
 02281^⊁^\nsucc^\nsucc^R^mathrel^amssymb wrisym^not succeeds
-02282^⊂^\subset^\subset^R^mathrel^^subset or is implied by
-02283^⊃^\supset^\supset^R^mathrel^^superset or implies
-02284^⊄^\nsubset^\nsubset^R^mathrel^wrisym^not subset, variant [slash negation]
-02285^⊅^\nsupset^\nsupset^R^mathrel^wrisym^not superset, variant [slash negation]
-02286^⊆^\subseteq^\subseteq^R^mathrel^^subset, equals
-02287^⊇^\supseteq^\supseteq^R^mathrel^^superset, equals
-02288^⊈^\nsubseteq^\nsubseteq^R^mathrel^amssymb wrisym^not subset, equals
-02289^⊉^\nsupseteq^\nsupseteq^R^mathrel^amssymb wrisym^not superset, equals
+02282^⊂^\subset^\subset^R^mathrel^^= \sub, subset or is implied by
+02283^⊃^\supset^\supset^R^mathrel^^= \sup, superset or implies
+02284^⊄^\nsubset^\nsubset^R^mathrel^wrisym^= \nsub, not subset, variant [slash negation]
+02285^⊅^\nsupset^\nsupset^R^mathrel^wrisym^= \nsup, not superset, variant [slash negation]
+02286^⊆^\subseteq^\subseteq^R^mathrel^^= \sube, subset, equals
+02287^⊇^\supseteq^\supseteq^R^mathrel^^= \supe, superset, equals
+02288^⊈^\nsubseteq^\nsubseteq^R^mathrel^amssymb wrisym^= \nsubseteqq, not subset, equals
+02289^⊉^\nsupseteq^\nsupseteq^R^mathrel^amssymb wrisym^= \nsupseteqq, not superset, equals
 0228A^⊊^\subsetneq^\subsetneq^R^mathrel^amssymb^= \varsubsetneq (fourier), subset, not equals
 0228B^⊋^\supsetneq^\supsetneq^R^mathrel^amssymb^superset, not equals
 0228C^⊌^^\cupleftarrow^B^mathbin^^MULTISET
@@ -717,7 +718,7 @@
 022EB^⋫^\ntriangleright^\ntriangleright^R^mathrel^amssymb^= \NotRightTriangle (wrisym), not right triangle
 022EC^⋬^\ntrianglelefteq^\ntrianglelefteq^R^mathrel^amssymb^= \nunlhd (wrisym), not left triangle, equals
 022ED^⋭^\ntrianglerighteq^\ntrianglerighteq^R^mathrel^amssymb^= \nunrhd (wrisym), not right triangle, equals
-022EE^⋮^\vdots^\vdots^R^mathrel^^VERTICAL ELLIPSIS
+022EE^⋮^\vdots^\vdots^R^mathrel^^= \vellip, VERTICAL ELLIPSIS
 022EF^⋯^\cdots^\unicodecdots^R^mathord^^= \ctdot, three dots, centered
 022F0^⋰^\iddots^\adots^R^mathrel^mathdots^= \adots (yhmath), three dots, ascending
 022F1^⋱^\ddots^\ddots^R^mathrel^^three dots, descending
@@ -1585,8 +1586,8 @@
 02AC8^⫈^^\supsim^R^mathrel^^SUPERSET OF ABOVE TILDE OPERATOR
 02AC9^⫉^^\subsetapprox^R^mathrel^^SUBSET OF ABOVE ALMOST EQUAL TO
 02ACA^⫊^^\supsetapprox^R^mathrel^^SUPERSET OF ABOVE ALMOST EQUAL TO
-02ACB^⫋^\subsetneqq^\subsetneqq^R^mathrel^amssymb^SUBSET OF ABOVE NOT EQUAL TO
-02ACC^⫌^\supsetneqq^\supsetneqq^R^mathrel^amssymb^SUPERSET OF ABOVE NOT EQUAL TO
+02ACB^⫋^\subsetneqq^\subsetneqq^R^mathrel^amssymb^= \varsubsetneqq, SUBSET OF ABOVE NOT EQUAL TO
+02ACC^⫌^\supsetneqq^\supsetneqq^R^mathrel^amssymb^= \varsupsetneqq , SUPERSET OF ABOVE NOT EQUAL TO
 02ACD^⫍^^\lsqhook^R^mathrel^^SQUARE LEFT OPEN BOX OPERATOR
 02ACE^⫎^^\rsqhook^R^mathrel^^SQUARE RIGHT OPEN BOX OPERATOR
 02ACF^⫏^^\csub^R^mathrel^^CLOSED SUBSET
