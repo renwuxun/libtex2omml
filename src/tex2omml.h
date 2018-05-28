@@ -30,7 +30,7 @@ void tex2omml_free(void);
 
 int tex2omml_translate_texopt(const char* tex, size_t texlen, char* ommlbuf, size_t ommlbufsize, int texopt);
 int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize);
-
+int tex2omml_mathml2omml(char* mathml, size_t mathmlLen, char* outOmml, size_t outOmmlSize);
 
 
 #endif //TEX2OMML_TEX2OMML_H

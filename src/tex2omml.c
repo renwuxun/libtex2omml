@@ -46,17 +46,9 @@ void tex2omml_free(void) {
     }
 }
 
-int tex2omml_translate_texopt(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt) {
-    char* html = mtex2MML_parse(tex, texlen, texopt);
-    if (!html) {
-        log_error("translate tex to html error");
-        return 1;
-    }
-
+int tex2omml_mathml2omml(char* mathml, size_t mathmlLen, char* outOmml, size_t outOmmlSize) {
     static char xmlbuf[XML_BUF_SIZE];// = {0};
-    html2xml(html, strlen(html), xmlbuf, XML_BUF_SIZE);
-    mtex2MML_free_string(html);
-
+    html2xml(mathml, mathmlLen, xmlbuf, XML_BUF_SIZE);
 
     xmlDocPtr doc = xmlReadMemory(xmlbuf, (int)strlen(xmlbuf), NULL, "utf-8", XML_PARSE_NONET|XML_PARSE_NOENT);
     if (!doc) {
@@ -83,20 +75,34 @@ int tex2omml_translate_texopt(const char* tex, size_t texlen, char* buf, size_t 
         return 1;
     }
     size_t contentlen = strlen((char*)buffer->content);
-    if (contentlen>bufsize-1) {
-        log_error("need more buffer for omml output, current:%lu", bufsize);
+    if (contentlen>outOmmlSize-1) {
+        log_error("need more buffer for omml out, current:%lu", outOmmlSize);
         xmlFreeDoc(res);
         xmlFreeDoc(doc);
         return 1;
     }
 
-    memcpy(buf, buffer->content, contentlen+1);
+    memcpy(outOmml, buffer->content, contentlen+1);
 
     xmlCleanupParser();
     xmlFreeDoc(doc);
     xmlFreeDoc(res);
 
     return 0;
+}
+
+int tex2omml_translate_texopt(const char* tex, size_t texlen, char* buf, size_t bufsize, int texopt) {
+    char* html = mtex2MML_parse(tex, texlen, texopt);
+    if (!html) {
+        log_error("translate tex to html error");
+        return 1;
+    }
+
+    int r = tex2omml_mathml2omml(html, strlen(html), buf, bufsize);
+
+    mtex2MML_free_string(html);
+
+    return r;
 }
 
 int tex2omml_translate(const char* tex, size_t texlen, char* buf, size_t bufsize) {
