@@ -488,7 +488,7 @@
 02205^∅^\varnothing^\varnothing^N^mathord^amssymb^circle, slash
 02206^∆^^\increment^U^mathord^^# \mathrm{\Delta}, laplacian (Delta; nabla square)
 02207^∇^\nabla^\nabla^U^mathord^^NABLA, del, hamilton operator
-02208^∈^\in^\in^R^mathrel^^set membership, variant
+02208^∈^\in^\in^R^mathrel^^= \Element, set membership, variant
 02209^∉^\notin^\notin^R^mathrel^^= \nin (wrisym), negated set membership
 0220A^∊^^\smallin^R^mathrel^^set membership (small set membership)
 0220B^∋^\ni^\ni^R^mathrel^^= \owns, contains, variant
@@ -519,7 +519,7 @@
 02224^∤^\nmid^\nmid^R^mathrel^amssymb^negated mid, DOES NOT DIVIDE
 02225^∥^\parallel^\parallel^R^mathrel^^parallel
 02226^∦^\nparallel^\nparallel^R^mathrel^amssymb fourier^not parallel
-02227^∧^\wedge^\wedge^B^mathbin^amssymb^= \land, b: LOGICAL AND
+02227^∧^\wedge^\wedge^B^mathbin^amssymb^= \land, = \and, b: LOGICAL AND
 02228^∨^\vee^\vee^B^mathbin^^= \lor, b: LOGICAL OR
 02229^∩^\cap^\cap^B^mathbin^^= \Intersection, INTERSECTION
 0222A^∪^\cup^\cup^B^mathbin^^= \Union, UNION or logical sum
