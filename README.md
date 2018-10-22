@@ -8,7 +8,7 @@ TEX/LATEX转换为Microsoft Office mathml格式的库
 
 ### 安装
 ```shell
-git clone https://gitlab-wenba.xueba100.com:2443/aixue-open/libtex2omml.git
+git clone https://github.com/renwuxun/libtex2omml.git
 cd libtex2omml
 mkdir build
 cd build
