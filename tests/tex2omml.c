@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 //    char* tex = "$$sqrt{a^{2}b}=\\left |a\\right |\\sqrt{b}=a\\sqrt{b}\\left ( a\\geqslant %d\\right )$$";
     //char* tex = "$$v_{0}=3cm/s$$";
 //    char* tex = "$$ce{Na_{%d}O}$$";
-    char* tex = "$$2C_{4}H_{10}+13O_{2}\\buildrel{&#x70b9;&#x71c3;%d}\\over =8CO_{2}+10H_{2}O$$";
+    char* tex = "$$CH_{3}CH=CH_{2} &#43;Br_{2} \\xrightarrow {\\text{CCl_{4}}} CH_{3}CHBrCH_{2}Br$$";
     char texx[1024];
     char omml[10<<10] = {0};
     int i=0, j=1000;
