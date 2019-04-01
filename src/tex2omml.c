@@ -47,7 +47,7 @@ void tex2omml_free(void) {
 }
 
 int tex2omml_mathml2omml(char* mathml, size_t mathmlLen, char* outOmml, size_t outOmmlSize) {
-    static char xmlbuf[XML_BUF_SIZE];// = {0};
+    char xmlbuf[XML_BUF_SIZE] = {0};
     html2xml(mathml, mathmlLen, xmlbuf, XML_BUF_SIZE);
 
     xmlDocPtr doc = xmlReadMemory(xmlbuf, (int)strlen(xmlbuf), NULL, "utf-8", XML_PARSE_NONET|XML_PARSE_NOENT);

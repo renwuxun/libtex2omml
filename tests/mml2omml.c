@@ -2,9 +2,9 @@
 // Created by renwuxun on 18-1-15.
 //
 
-#include <mtex2MML/mtex2MML.h>
 #include <libxslt/xsltInternals.h>
 #include <libxslt/transform.h>
+#include <string.h>
 
 
 int main(int argc, char** argv) {
